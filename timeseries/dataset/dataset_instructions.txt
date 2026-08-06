@@ -1,0 +1,23 @@
+Time Series extracted from the original dataset representing average signal in 30 minutes interval for subjects in the CMI dataset.
+
+In this case, the Severity Impairment Index (sii) has been binarized (and consequently simplified for tasks involving time series analysis) between non problematic (sii = 0.0) or problematic (sii in [1,2,3]) index.
+
+The file is a gzipped version of a python list where each element is a data frame representing a time series, where on the rows you find the time steps (0-200) and on the columns you find the signal source, the user id and the severity impairment index.
+
+For opening it use
+
+
+import gzip 
+import pickle 
+
+with gzip.open("CMI_timeseries_dataset.pkl.gz", "rb") as f:
+	 CMI_timeseries_dataset = pickle.load(f)
+
+
+Access to time series data frame normally as, for example, CMI_timeseries_dataset[0] (corresponds to first time series)
+
+
+If you do not have gzip or pickle, pip install them first
+
+
+

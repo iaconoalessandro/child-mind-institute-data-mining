@@ -1,0 +1,30 @@
+# Core data handling and modelling
+numpy>=2.0
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.5
+
+# Time series specific
+# sktime   — the Hampel outlier filter and the DTW k-NN classifier
+# tslearn  — PAA approximation, DTW k-means, pairwise DTW distances
+# aeon     — RDST, MiniRocket and MultiRocket-Hydra classifiers
+# stumpy   — matrix profile (motifs and discords)
+sktime>=0.35
+tslearn>=0.6
+aeon>=1.0
+stumpy>=1.13
+
+# STL seasonal decomposition, and a dependency of the vendored PULSAR code
+statsmodels>=0.14
+
+# Just-in-time compilation of the shapelet distance functions
+numba>=0.60
+
+# Hyperparameter search (used only for the KNN-Euclidean study)
+optuna>=4.0
+
+# Required by PULSAR/time_series_representations.py for its FFT
+pyfftw>=0.13
+
+# Plotting
+matplotlib>=3.8

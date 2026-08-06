@@ -1,0 +1,34 @@
+# Core data handling and modelling
+numpy>=2.0
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.5
+
+# Gradient-boosting libraries
+# On macOS these need the OpenMP runtime as well:  brew install libomp
+lightgbm>=4.0
+xgboost>=2.0
+catboost>=1.2
+
+# Hyperparameter search
+optuna>=4.0
+joblib>=1.3
+
+# Neural network (used only for the MLP in src/models.py)
+torch>=2.0
+
+# Outlier detection and the 2D projections used to sanity-check it
+pyod>=2.0
+umap-learn>=0.5
+pacmap>=0.7
+
+# Class-imbalance diagnostic in the classification preprocessing stage
+imbalanced-learn>=0.12
+
+# Explainability (notebook 06 / the eval-clf stage)
+shap>=0.45
+lime>=0.2
+
+# Plotting
+matplotlib>=3.8
+seaborn>=0.13
